@@ -1,0 +1,73 @@
+
+#level {
+    text-align: center;
+    overflow: visible;
+    position: relative;
+    display: inline-block;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+.path {
+    position: absolute;
+}
+
+.character {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    left: 0;
+    bottom: 0;
+    background-image: url('images/stand.gif');
+    background-repeat: no-repeat;
+}
+
+.character.jump {
+    background-image: url('images/jump.gif');
+}
+
+.character.walk {
+    background-image: url('images/walk.gif');
+}
+
+.character.headbanging {
+    background-image: url('images/headbanging.gif');
+}
+
+.character.flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.block {
+    display: inline-block;
+    margin-top: -1px;
+    width: 23px;
+    height: 23px;
+    margin-left: 4px;
+    margin-right: 2px;
+    opacity: 0.0;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 1px;
+}
+
+.block.bg1 {
+    background: url('images/block-bg1.png') repeat 6px 0;
+}
+
+.block.bg2 {
+    background: url('images/block-bg2.png') repeat 6px 0;
+}
+
+.block.bg3 {
+    background: url('images/block-bg3.png') repeat 6px 0;
+}
+
+.block:last-child {
+    margin-right: 0;
+}
+
