@@ -1,4 +1,4 @@
-# MegaMan
+# Mega Man
 
 As a kid, one of my most memorable and frustrating game experiences was getting past the disappearing block puzzles on Mega Man 2, where (long story short) a series of blocks appear and disappear in a certain rhythm.
 
@@ -9,7 +9,7 @@ We're older and wiser now (but still dorks), and don't have quite as much time t
 # Problem
 
 So here's your mission. Given a simplified 1D map of disappearing blocks, write a function that returns the fastest sequence of moves that gets you safely across.
-The map is specified as a string (e.g. `x.1.x`), where each character corresponds to either a fixed (non-disappearing) block (`x`), a disappearing block (`[1-5]`), or empty space (`.`). The map always starts and ends with fixed blocks (`x`), and your character begins on the leftmost block and must proceed (if possible) to the rightmost block, without falling into empty space.
+The map is specified as a string (e.g. `x.1.x`), where each character corresponds to either a fixed (non-disappearing) block (`x`), a disappearing block (`1-5`), or empty space (`.`). The map always starts and ends with fixed blocks (`x`), and your character begins on the leftmost block and must proceed (if possible) to the rightmost block, without falling into empty space.
 
 Disappearing blocks come and go over time according to the value of their corresponding digit. Blocks marked `1` are absent for 1 second, then present for one second; blocks marked `2` are absent for 2 seconds, then present for one second, and so on all the way up to `5`. Each block is on its own timer, and the sequence repeats -- so a `2` block will be absent for 2 seconds, then appear for one second, then repeat. At the start, all blocks are absent and their timers begin.
 
